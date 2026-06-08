@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1780904302">
+  <File Type="ROUTE-PWR" Name="final_top_shell_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="final_top_shell.tcl"/>
+  <File Type="BITSTR-MMI" Name="final_top_shell.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="final_top_shell_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="final_top_shell_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="final_top_shell_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="final_top_shell_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="final_top_shell_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="final_top_shell_opt.dcp"/>
+  <File Type="OPT-DRC" Name="final_top_shell_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="final_top_shell.hwdef"/>
+  <File Type="PWROPT-DCP" Name="final_top_shell_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="final_top_shell_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="final_top_shell_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="final_top_shell_placed.dcp"/>
+  <File Type="PLACE-IO" Name="final_top_shell_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="final_top_shell_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="final_top_shell_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="final_top_shell_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="final_top_shell_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="final_top_shell_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="final_top_shell_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="final_top_shell.bin"/>
+  <File Type="PLACE-TIMING" Name="final_top_shell_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="final_top_shell_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="final_top_shell.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="final_top_shell_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="final_top_shell_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="final_top_shell_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="final_top_shell.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="final_top_shell_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="final_top_shell_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="final_top_shell_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="final_top_shell_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="final_top_shell_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="final_top_shell_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="final_top_shell_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="final_top_shell_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="final_top_shell_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="final_top_shell_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="final_top_shell_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="final_top_shell_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="final_top_shell_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="final_top_shell_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="final_top_shell_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="final_top_shell_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="final_top_shell_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="final_top_shell_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="final_top_shell_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="final_top_shell_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="final_top_shell_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="final_top_shell_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="final_top_shell_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="final_top_shell_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="final_top_shell_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="final_top_shell_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="final_top_shell_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="final_top_shell.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="final_top_shell_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="final_top_shell_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="final_top_shell.nky"/>
+  <File Type="BITSTR-BMM" Name="final_top_shell_bd.bmm"/>
+  <File Type="PDI-FILE" Name="final_top_shell.pdi"/>
+  <File Type="RCFI_FILE" Name="final_top_shell.rcfi"/>
+  <File Type="CFI_FILE" Name="final_top_shell.cfi"/>
+  <File Type="RNPI_FILE" Name="final_top_shell.rnpi"/>
+  <File Type="NPI_FILE" Name="final_top_shell.npi"/>
+  <File Type="RBD_FILE" Name="final_top_shell.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="final_top_shell.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="final_top_shell.sysdef"/>
+  <File Type="BG-BGN" Name="final_top_shell.bgn"/>
+  <File Type="BG-DRC" Name="final_top_shell.drc"/>
+  <File Type="RDI-RDI" Name="final_top_shell.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../VGA_files/bus_types_sizes.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Lab6_files/cs_rising_edge.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Lab6_files/frequency_controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Lab6_files/lab6_shell.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Lab6_files/mux7seg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Lab6_files/spi_receiver.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Lab6_files/system_clock_generator.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Lab6_files/tick_generator.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Lab6_files/Voltmeter_shell.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../VGA_files/adc_data_shiftreg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../VGA_files/adc_out_to_vga_shell.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../VGA_files/framebuffer.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../VGA_files/vga_prep.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../VGA_files/vga_sync.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../final_top_shell.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../VGA_files/triggering_prep.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Lab6_files/myVoltmeter.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="final_top_shell"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../final_top_shell_constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/final_top_shell.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+</GenRun>

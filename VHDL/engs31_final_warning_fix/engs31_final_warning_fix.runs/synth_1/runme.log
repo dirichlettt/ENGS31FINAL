@@ -1,0 +1,479 @@
+
+*** Running vivado
+    with args -log final_top_shell.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source final_top_shell.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source final_top_shell.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/engs31_final_warning_fix/engs31_final_warning_fix.srcs/utils_1/imports/synth_1/final_top_shell.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/engs31_final_warning_fix/engs31_final_warning_fix.srcs/utils_1/imports/synth_1/final_top_shell.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top final_top_shell -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 47876
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1247.484 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'final_top_shell' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/final_top_shell.vhd:39]
+INFO: [Synth 8-3491] module 'voltmeter_top_level' declared at 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/Voltmeter_shell.vhd:16' bound to instance 'Voltmeter_top_inst' of component 'voltmeter_top_level' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/final_top_shell.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'voltmeter_top_level' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/Voltmeter_shell.vhd:42]
+INFO: [Synth 8-3491] module 'lab6_top_level' declared at 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/lab6_shell.vhd:21' bound to instance 'lab6_top_inst' of component 'lab6_top_level' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/Voltmeter_shell.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'lab6_top_level' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/lab6_shell.vhd:44]
+	Parameter CLOCK_DIVIDER_RATIO bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'system_clock_generator' declared at 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/system_clock_generator.vhd:14' bound to instance 'clocking' of component 'system_clock_generator' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/lab6_shell.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'system_clock_generator' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/system_clock_generator.vhd:25]
+	Parameter CLOCK_DIVIDER_RATIO bound to: 100 - type: integer 
+INFO: [Synth 8-113] binding component instance 'system_clock_buffer' to cell 'BUFG' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/system_clock_generator.vhd:63]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'clock_forwarding_ODDR' to cell 'ODDR' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/system_clock_generator.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'system_clock_generator' (1#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/system_clock_generator.vhd:25]
+INFO: [Synth 8-3491] module 'tick_generator' declared at 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/tick_generator.vhd:14' bound to instance 'tick_generation' of component 'tick_generator' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/lab6_shell.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'tick_generator' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/tick_generator.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'tick_generator' (2#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/tick_generator.vhd:24]
+INFO: [Synth 8-3491] module 'freq_ratio_controller' declared at 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/frequency_controller.vhd:5' bound to instance 'freq_controller' of component 'freq_ratio_controller' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/lab6_shell.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'freq_ratio_controller' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/frequency_controller.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'freq_ratio_controller' (3#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/frequency_controller.vhd:14]
+	Parameter N_SHIFTS bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'spi_receiver' declared at 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/spi_receiver.vhd:21' bound to instance 'receiver' of component 'spi_receiver' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/lab6_shell.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'spi_receiver' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/spi_receiver.vhd:40]
+	Parameter N_SHIFTS bound to: 15 - type: integer 
+INFO: [Synth 8-226] default block is never used [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/spi_receiver.vhd:80]
+INFO: [Synth 8-226] default block is never used [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/spi_receiver.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'spi_receiver' (4#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/spi_receiver.vhd:40]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/engs31_final_warning_fix/engs31_final_warning_fix.runs/synth_1/.Xil/Vivado-52932-c011-07/realtime/blk_mem_gen_0_stub.v:6' bound to instance 'adc_data_to_measured_voltage' of component 'blk_mem_gen_0' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/lab6_shell.vhd:184]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/engs31_final_warning_fix/engs31_final_warning_fix.runs/synth_1/.Xil/Vivado-52932-c011-07/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (5#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/engs31_final_warning_fix/engs31_final_warning_fix.runs/synth_1/.Xil/Vivado-52932-c011-07/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-3491] module 'mux7seg' declared at 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/mux7seg.vhd:25' bound to instance 'display' of component 'mux7seg' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/lab6_shell.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'mux7seg' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/mux7seg.vhd:38]
+INFO: [Synth 8-226] default block is never used [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/mux7seg.vhd:75]
+INFO: [Synth 8-226] default block is never used [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/mux7seg.vhd:89]
+INFO: [Synth 8-226] default block is never used [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/mux7seg.vhd:99]
+INFO: [Synth 8-256] done synthesizing module 'mux7seg' (6#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/mux7seg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'lab6_top_level' (7#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/lab6_shell.vhd:44]
+INFO: [Synth 8-3491] module 'cs_rising_edge' declared at 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/cs_rising_edge.vhd:7' bound to instance 'cs_rising_edge_inst' of component 'cs_rising_edge' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/Voltmeter_shell.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'cs_rising_edge' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/cs_rising_edge.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'cs_rising_edge' (8#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/cs_rising_edge.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'voltmeter_top_level' (9#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/Lab6_files/Voltmeter_shell.vhd:42]
+INFO: [Synth 8-3491] module 'adc_out_to_vga_shell' declared at 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/adc_out_to_vga_shell.vhd:19' bound to instance 'VGA_top_inst' of component 'adc_out_to_vga_shell' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/final_top_shell.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'adc_out_to_vga_shell' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/adc_out_to_vga_shell.vhd:29]
+INFO: [Synth 8-3491] module 'adc_data_shiftreg' declared at 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/adc_data_shiftreg.vhd:22' bound to instance 'adc_data_shiftreg_inst' of component 'adc_data_shiftreg' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/adc_out_to_vga_shell.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'adc_data_shiftreg' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/adc_data_shiftreg.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'adc_data_shiftreg' (10#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/adc_data_shiftreg.vhd:31]
+INFO: [Synth 8-3491] module 'vga_prep' declared at 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/vga_prep.vhd:20' bound to instance 'vga_prep_inst' of component 'vga_prep' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/adc_out_to_vga_shell.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'vga_prep' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/vga_prep.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'vga_prep' (11#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/vga_prep.vhd:27]
+INFO: [Synth 8-3491] module 'framebuffer' declared at 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/framebuffer.vhd:8' bound to instance 'framebuffer_inst' of component 'framebuffer' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/adc_out_to_vga_shell.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'framebuffer' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/framebuffer.vhd:25]
+WARNING: [Synth 8-614] signal 'pixel_y_int' is read in the process but is not in the sensitivity list [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/framebuffer.vhd:83]
+WARNING: [Synth 8-614] signal 'line_0V' is read in the process but is not in the sensitivity list [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/framebuffer.vhd:83]
+WARNING: [Synth 8-614] signal 'line_3V' is read in the process but is not in the sensitivity list [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/framebuffer.vhd:83]
+WARNING: [Synth 8-614] signal 'line_6V' is read in the process but is not in the sensitivity list [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/framebuffer.vhd:83]
+WARNING: [Synth 8-614] signal 'line_3V_neg' is read in the process but is not in the sensitivity list [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/framebuffer.vhd:83]
+WARNING: [Synth 8-614] signal 'line_6V_neg' is read in the process but is not in the sensitivity list [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/framebuffer.vhd:83]
+WARNING: [Synth 8-614] signal 'pixel_x_int' is read in the process but is not in the sensitivity list [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/framebuffer.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'framebuffer' (12#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/framebuffer.vhd:25]
+INFO: [Synth 8-3491] module 'vga_sync' declared at 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/vga_sync.vhd:5' bound to instance 'vga_sync_inst' of component 'vga_sync' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/adc_out_to_vga_shell.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/vga_sync.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (13#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/vga_sync.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'adc_out_to_vga_shell' (14#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/adc_out_to_vga_shell.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'final_top_shell' (15#1) [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/final_top_shell.vhd:39]
+WARNING: [Synth 8-7129] Port voltage_data_bus[0][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[0][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[0][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[1][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[1][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[1][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[2][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[2][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[2][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[3][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[3][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[3][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[4][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[4][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[4][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[5][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[5][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[5][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[6][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[6][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[6][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[7][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[7][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[7][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[8][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[8][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[8][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[9][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[9][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[9][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[10][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[10][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[10][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[11][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[11][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[11][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[12][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[12][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[12][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[13][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[13][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[13][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[14][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[14][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[14][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[15][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[15][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[15][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[16][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[16][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[16][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[17][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[17][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[17][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[18][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[18][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[18][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[19][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[19][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[19][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[20][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[20][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[20][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[21][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[21][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[21][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[22][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[22][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[22][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[23][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[23][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[23][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[24][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[24][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[24][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[25][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[25][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[25][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[26][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[26][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[26][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[27][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[27][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[27][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[28][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[28][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[28][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[29][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[29][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[29][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[30][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[30][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[30][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[31][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[31][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[31][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[32][2] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[32][1] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[32][0] in module vga_prep is either unconnected or has no load
+WARNING: [Synth 8-7129] Port voltage_data_bus[33][2] in module vga_prep is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.176 . Memory (MB): peak = 1498.922 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [o:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/engs31_final_warning_fix/engs31_final_warning_fix.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage'
+Finished Parsing XDC File [o:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/engs31_final_warning_fix/engs31_final_warning_fix.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage'
+Parsing XDC File [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/final_top_shell_constraints.xdc]
+Finished Parsing XDC File [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/final_top_shell_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/final_top_shell_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/final_top_shell_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/final_top_shell_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1498.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1498.922 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'spi_receiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+               assert_cs |                             0010 |                               01
+                shifting |                             0100 |                               10
+               load_data |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'spi_receiver'
+WARNING: [Synth 8-327] inferring latch for variable 'y_at_x_reg' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/framebuffer.vhd:174]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_x_int_reg' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/framebuffer.vhd:93]
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_y_int_reg' [O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/VGA_files/framebuffer.vhd:94]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:32 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   20 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 642   
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 640   
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input   20 Bit        Muxes := 2     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   3 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 641   
+	   5 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 22    
+	   5 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (pixel_y_int_reg[23]) is unused and will be removed from module framebuffer.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:48 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:51 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:52 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:55 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Voltmeter_top_inst/lab6_top_inst/adc_data_to_measured_voltage  has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:58 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:58 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:59 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:59 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:59 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:59 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name     | RTL Name                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|final_top_shell | Voltmeter_top_inst/cs_rising_edge_inst/cs_prev_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++----------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     1|
+|2     |BUFG        |     3|
+|3     |CARRY4      |    29|
+|4     |LUT1        |  2584|
+|5     |LUT2        |   128|
+|6     |LUT3        |    39|
+|7     |LUT4        |    29|
+|8     |LUT5        |  3278|
+|9     |LUT6        |  1654|
+|10    |MUXF7       |   646|
+|11    |MUXF8       |   306|
+|12    |ODDR        |     1|
+|13    |SRL16E      |     1|
+|14    |FDRE        |  9111|
+|15    |FDSE        |  2567|
+|16    |LD          |    28|
+|17    |IBUF        |     5|
+|18    |OBUF        |    29|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:59 . Memory (MB): peak = 1498.922 ; gain = 251.438
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 17 critical warnings and 1925 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:57 . Memory (MB): peak = 1498.922 ; gain = 251.438
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:59 . Memory (MB): peak = 1498.922 ; gain = 251.438
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 1498.922 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1010 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1498.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  LD => LDCE: 28 instances
+
+Synth Design complete, checksum: a663376a
+INFO: [Common 17-83] Releasing license: Synthesis
+75 Infos, 114 Warnings, 17 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:01:05 . Memory (MB): peak = 1498.922 ; gain = 251.438
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/engs31_final_warning_fix/engs31_final_warning_fix.runs/synth_1/final_top_shell.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file final_top_shell_utilization_synth.rpt -pb final_top_shell_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  8 03:38:05 2026...

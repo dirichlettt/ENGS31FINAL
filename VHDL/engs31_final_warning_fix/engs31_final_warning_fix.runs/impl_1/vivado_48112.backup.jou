@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Jun  8 03:38:30 2026
+# Process ID: 48112
+# Current directory: O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/engs31_final_warning_fix/engs31_final_warning_fix.runs/impl_1
+# Command line: vivado.exe -log final_top_shell.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source final_top_shell.tcl -notrace
+# Log file: O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/engs31_final_warning_fix/engs31_final_warning_fix.runs/impl_1/final_top_shell.vdi
+# Journal file: O:/ES31_S26/Final_Project/fixing_warnings/ENGS31FINAL-main/VHDL/engs31_final_warning_fix/engs31_final_warning_fix.runs/impl_1\vivado.jou
+# Running On: c011-07, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 20, Host memory: 34031 MB
+#-----------------------------------------------------------
+source final_top_shell.tcl -notrace
