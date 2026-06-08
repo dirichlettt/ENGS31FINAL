@@ -173,7 +173,7 @@ begin
     
         y_at_x <= y_reg_buffer(to_integer(unsigned(pixel_x)));
         coord_match <= '1' when y_at_x = pixel_y else '0';
-        if coord_match then
+        if coord_match='1' then
             red     <= "0000"; 
             green   <= "1111"; 
             blue    <= "0000";

@@ -85,8 +85,8 @@ set_property PACKAGE_PIN L2 [get_ports {spi_s_data_ext}]
 set_property PACKAGE_PIN G2 [get_ports {spi_sclk_ext_port}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {spi_sclk_ext_port}]
 ##Sch name = JA7
-set_property PACKAGE_PIN H1 [get_ports {new_data_ext}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {new_data_ext}]
+#set_property PACKAGE_PIN H1 [get_ports {new_data_ext}]					
+#	set_property IOSTANDARD LVCMOS33 [get_ports {new_data_ext}]
 
 ##====================================================================
 ## Pmod Header JB

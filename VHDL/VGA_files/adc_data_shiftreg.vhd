@@ -31,6 +31,7 @@ end adc_data_shiftreg;
 architecture Behavioral of adc_data_shiftreg is
 
 -- internal signals
+signal voltage_sr_i : voltage_reg_t := (others => (others=>'0'));
 
 begin
     -- shiftreg with 12 bit data, shifts in data from the right side of the screen
@@ -38,10 +39,11 @@ begin
     begin
         if rising_edge(clk) then
             if shift_en = '1' then
-                voltage_sr(0 to SCREEN_WIDTH - 2) <= voltage_sr(1 to SCREEN_WIDTH - 1);
-                voltage_sr(SCREEN_WIDTH-1) <= adc_data;
+                voltage_sr_i(0 to SCREEN_WIDTH - 2) <= voltage_sr_i(1 to SCREEN_WIDTH - 1);
+                voltage_sr_i(SCREEN_WIDTH-1) <= adc_data;
             end if;
         end if;
     end process;
+    voltage_sr <= voltage_sr_i;
 
 end Behavioral;
