@@ -1,0 +1,97 @@
+Circuit: * Z:\home\puppygirl-dirac\Documents\coursework\spring_2026\engs31\final_project\final_vhdl\analog_preprocessing\analog_preprocessing.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 1.02385
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 1.01955
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 1.0126
+vernier = 0.00195313
+vernier = 0.00260417
+vernier = 0.00130208
+Gmin = 1.00915
+vernier = 0.00173611
+vernier = 0.000868055
+Gmin = 1.00685
+vernier = 0.00115741
+vernier = 0.000578703
+Gmin = 1.0054
+vernier = 0.000771604
+vernier = 0.000578703
+vernier = 0.000434027
+Gmin = 1.00443
+vernier = 0.000578703
+vernier = 0.000434027
+Gmin = 0
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 58.3333%
+Source Step = 65.9091%
+Source Step = 73.4848%
+Source Step = 81.0606%
+Source Step = 88.6364%
+Source Step = 90.9564%
+Source Step = 91.0748%
+Source Step = 91.1932%
+Source Step = 91.3116%
+Source Step = 91.4299%
+vernier = 0.00585938
+Source Step = 91.5661%
+Source Step = 91.7436%
+Source Step = 91.9212%
+Source Step = 92.0987%
+Source Step = 92.2763%
+vernier = 0.00878906
+Source Step = 92.4716%
+Source Step = 92.7379%
+Source Step = 93.0043%
+Source Step = 93.2706%
+Source Step = 93.5369%
+vernier = 0.0131836
+Source Step = 93.8166%
+Source Step = 94.2161%
+Source Step = 94.6156%
+Source Step = 95.0151%
+Source Step = 95.4146%
+Source Step = 95.8141%
+vernier = 0.0197754
+Source Step = 96.4134%
+Source Step = 97.0126%
+Source Step = 97.6119%
+Source Step = 98.2111%
+Source Step = 98.8104%
+vernier = 0.0296631
+Source Step = 99.6793%
+Source stepping succeeded in finding the operating point.
+
+Heightened Def Con from 4.26118e-010 to 4.42612e-009
+
+Date: Tue Jun 02 23:59:08 2026
+Total elapsed time: 1.179 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 10321
+traniter = 2760
+tranpoints = 1211
+accept = 1150
+rejected = 62
+matrix size = 110
+fillins = 215
+solver = Normal
+Matrix Compiler1:     897 opcodes  5.2/[2.4]/2.9
+Matrix Compiler2:     963 opcodes

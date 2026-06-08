@@ -1,0 +1,63 @@
+[*]
+[*] GTKWave Analyzer v4.0.0-prealpha (7d7b4db) (w)1999-2022 BSI
+[*] Tue Jun  2 02:01:23 2026
+[*]
+[dumpfile] "/home/puppygirl-dirac/Documents/coursework/spring_2026/engs31/final_project/final_vhdl/adc_out_to_vga_tb.fst"
+[dumpfile_mtime] "Tue Jun  2 02:01:18 2026"
+[dumpfile_size] 11748
+[savefile] "/home/puppygirl-dirac/Documents/coursework/spring_2026/engs31/final_project/final_vhdl/testbenches/adc_out_to_vga_tb.gtkw"
+[timestart] 0
+[size] 1366 651
+[pos] -1 -1
+*-40.886406 1800000000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[markername] AA
+[markername] BB
+[markername] CC
+[markername] DD
+[markername] EE
+[markername] FF
+[markername] GG
+[markername] HH
+[markername] II
+[markername] JJ
+[markername] KK
+[markername] LL
+[markername] MM
+[markername] NN
+[markername] OO
+[markername] PP
+[markername] QQ
+[markername] RR
+[markername] SS
+[markername] TT
+[markername] UU
+[markername] VV
+[markername] WW
+[markername] XX
+[markername] YY
+[markername] ZZ
+[treeopen] adc_out_to_vga_tb.
+[treeopen] adc_out_to_vga_tb.uut.
+[sst_width] 378
+[signals_width] 271
+[sst_expanded] 1
+[sst_vpaned_height] 167
+@28
+adc_out_to_vga_tb.clk_ext
+@22
+adc_out_to_vga_tb.uut.adc_data_shiftreg_inst.adc_data[11:0]
+@28
+adc_out_to_vga_tb.uut.adc_data_shiftreg_inst.shift_en
+@24
+adc_out_to_vga_tb.uut.adc_data_shiftreg_inst.voltage_sr[635][11:0]
+adc_out_to_vga_tb.uut.adc_data_shiftreg_inst.voltage_sr[636][11:0]
+adc_out_to_vga_tb.uut.adc_data_shiftreg_inst.voltage_sr[637][11:0]
+adc_out_to_vga_tb.uut.adc_data_shiftreg_inst.voltage_sr[638][11:0]
+adc_out_to_vga_tb.uut.adc_data_shiftreg_inst.voltage_sr[639][11:0]
+adc_out_to_vga_tb.uut.vga_prep_inst.vga_ready_y_reg[635][8:0]
+adc_out_to_vga_tb.uut.vga_prep_inst.vga_ready_y_reg[636][8:0]
+adc_out_to_vga_tb.uut.vga_prep_inst.vga_ready_y_reg[637][8:0]
+adc_out_to_vga_tb.uut.vga_prep_inst.vga_ready_y_reg[638][8:0]
+adc_out_to_vga_tb.uut.vga_prep_inst.vga_ready_y_reg[639][8:0]
+[pattern_trace] 1
+[pattern_trace] 0

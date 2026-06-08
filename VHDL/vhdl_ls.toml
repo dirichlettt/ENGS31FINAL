@@ -1,0 +1,6 @@
+[libraries]
+
+lib1.files = ["*.vhd", "VGA_files/*.vhd", "Lab6_files/*.vhd"]
+
+UNISIM.files = ["/home/puppygirl-dirac/Documents/unisims/unisim_VCOMP.vhd"]
+UNISIM.is_third_party = true
