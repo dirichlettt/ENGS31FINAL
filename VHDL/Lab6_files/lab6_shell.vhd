@@ -123,8 +123,6 @@ end component;
 --=============================================================
 signal system_clk       : std_logic := '0';
 signal take_sample      : std_logic := '0';                   
-signal shift_en         : std_logic := '0';
-signal load_en          : std_logic := '0';
 signal adc_data         : std_logic_vector(11 downto 0) := (others => '0');	-- A/D output
 signal measured_voltage : std_logic_vector(15 downto 0) := (others => '0');	-- A/D output
 

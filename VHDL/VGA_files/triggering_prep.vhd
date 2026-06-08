@@ -24,7 +24,6 @@ end adc_trigger_prep;
 
 architecture Behavioral of adc_trigger_prep is
 
-signal triggered_volts :  voltage_reg_t:= (others=>(others=>'0'));
 signal trigger_start : std_logic := '0';
 
 begin

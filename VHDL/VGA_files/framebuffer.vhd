@@ -32,9 +32,6 @@ signal coord_match      : STD_LOGIC := '0';
 signal pixel_x_int      : integer := to_integer(unsigned(pixel_x));
 signal pixel_y_int      : integer := to_integer(unsigned(pixel_y));
 
-signal label_x          : integer := 0;
-signal label_y          : integer := 0;
-
 signal line_0V         : integer := 241;
 signal line_3V         : integer := line_0V  - 80;
 signal line_3V_neg     : integer := line_0V  + 80;
@@ -80,7 +77,7 @@ end process write_to_buffer_reg;
 
 
 -- read vga pin values
-color_readout : process(pixel_x, pixel_y, video_on, y_reg_buffer, y_at_x, coord_match)
+color_readout : process(all)
 begin
     -- only show a white pixel at (read_x, read_y), y_reg_buffer(read_x) = read_y, and only if video is on, otherwise show black pixel
     red     <= "0000"; 
